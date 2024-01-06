@@ -1,0 +1,51 @@
+//analisis 
+//definicion del probelma 
+// datos de entrada
+// informacion de salida 
+//variables 
+//diseño 
+Algoritmo DeterminarMayorMenorEdad
+	
+	// Declarar variables
+	entero edad1, edad2, edad3, mayor, menor
+	
+	// Leer edades
+	Escribir("Ingrese la primera edad: ")
+	Leer(edad1)
+	
+	Escribir("Ingrese la segunda edad: ")
+	Leer(edad2)
+	
+	Escribir("Ingrese la tercera edad: ")
+	Leer(edad3)
+	
+	// Determinar el mayor
+	si edad1 >= edad2 y edad1 >= edad3 entonces
+		mayor = edad1
+	sino si edad2 >= edad1 y edad2 >= edad3 entonces
+			mayor = edad2
+		sino
+			mayor = edad3
+		fin si
+		
+		// Determinar el menor
+		si edad1 <= edad2 y edad1 <= edad3 entonces
+			menor = edad1
+		sino si edad2 <= edad1 y edad2 <= edad3 entonces
+				menor = edad2
+			sino
+				menor = edad3
+			fin si
+			
+			// Mostrar resultados
+			Escribir("La edad mayor es: ", mayor)
+			Escribir("La edad menor es: ", menor)
+			
+			// Validar si el mayor y el menor son mayores de 18 años
+			si mayor >= 18 y menor >= 18 entonces
+				Escribir("Tanto el mayor como el menor son mayores de 18 años.")
+			sino
+				Escribir("Al menos una de las edades no es mayor de 18 años.")
+			fin si
+			
+		Fin Algoritmo
