@@ -1,9 +1,12 @@
 //analisis 
-//definicion del probelma 
-// datos de entrada
-// informacion de salida 
-//variables 
-//dise�o 
+//definicion del probelma: verificar el problema de el mayor de 3 edades ingresados por el por el usuario.
+// datos de entrada: 3 edades que sean mayor y 3 edades que sean menores, para verificar si mayor a 18 años.
+// informacion de salida: descubrir el porcentaje de los 3 numeros mayores y menores, para realizar la revision si es mayor de edad de 18 años
+//variables :"mod_ edad1, "mod_edad 2 " , " mood_edad 3" valor 3 numeros y verificacion de si es mayor de 18 años.
+//diseños:
+//dividir el problema en etapas simples.
+//entrada de datos: pedir el usuario ingresar 3 edades.
+// datos a solicitar:
 Algoritmo DeterminarMayorMenorEdad
 	
 	// Declarar variables
@@ -41,11 +44,11 @@ Algoritmo DeterminarMayorMenorEdad
 			Escribir("La edad mayor es: ", mayor)
 			Escribir("La edad menor es: ", menor)
 			
-			// Validar si el mayor y el menor son mayores de 18 a�os
+			// Validar si el mayor y el menor son mayores de 18 años
 			si mayor >= 18 y menor >= 18 entonces
-				Escribir("Tanto el mayor como el menor son mayores de 18 a�os.")
+				Escribir("Tanto el mayor como el menor son mayores de 18 años.")
 			sino
-				Escribir("Al menos una de las edades no es mayor de 18 a�os.")
+				Escribir("Al menos una de las edades no es mayor de 18 años.")
 			fin si
 			
 		Fin Algoritmo
